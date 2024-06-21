@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+  },
+  "include": ["lib", "index.ts", "rollup.config.js"]
+}

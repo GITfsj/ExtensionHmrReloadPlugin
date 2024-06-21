@@ -1,0 +1,42 @@
+{
+  "name": "extension-hmr-reload-plugin",
+  "version": "0.0.1",
+  "author": "peterfeng",
+  "description": "A Webpack5 plugin used for browser extension development, which can reload the extension automatically when use hmr.",
+  "repository": {
+    "type": "git"
+  },
+  "type": "module",
+  "files": [
+    "./**"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build:tsc": "tsc --project tsconfig.build.json --declaration --emitDeclarationOnly",
+    "build:rollup": "rollup -c",
+    "build": "rimraf dist build && npm run build:tsc && npm run build:rollup",
+    "dev": "rimraf dist build && rollup -c -w",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-sucrase": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^20.14.6",
+    "rimraf": "^5.0.7",
+    "rollup": "^4.18.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.4.5",
+    "webextension-polyfill": "^0.12.0",
+    "ws": "^8.17.1"
+  }
+}
