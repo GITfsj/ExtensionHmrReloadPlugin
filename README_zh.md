@@ -127,3 +127,18 @@ webpack.config.js
 ### Contribute
 
 作者精力有限，仅实现webpack5插件，如果您使用的是vite等其他工具或想适配webpack3/4，欢迎联系作者，贡献您的开源力量。
+
+#### Github Link
+
+https://github.com/GITfsj/ExtensionHmrReloadPlugin/blob/main/README.md
+
+```shell
+npm install
+npm run build
+```
+
+#### NPM Link
+
+```shell
+npm install --save-dev extension-hmr-reload-plugin
+```

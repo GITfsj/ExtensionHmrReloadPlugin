@@ -126,3 +126,18 @@ webpack.config.js
 ### Contribute
 
 The author has limited capacity and has only implemented the Webpack 5 plugin. If you are using other tools such as Vite or want to adapt it to Webpack 3/4, you are welcome to contact the author and contribute to this open-source project.
+
+#### Github Link
+
+https://github.com/GITfsj/ExtensionHmrReloadPlugin/blob/main/README.md
+
+```shell
+npm install
+npm run build
+```
+
+#### NPM Link
+
+```shell
+npm install --save-dev extension-hmr-reload-plugin
+```
