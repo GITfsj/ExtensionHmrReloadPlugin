@@ -1,6 +1,6 @@
 {
   "name": "extension-hmr-reload-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "peterfeng",
   "description": "A Webpack5 plugin used for browser extension development, which can reload the extension automatically when use hmr.",
   "repository": {
